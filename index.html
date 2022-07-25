@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Numero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900">
+    <nav class="bg-orange-500 text-slate-50 font-bold flex justify-between items-center px-10 py-5 flex-col sm:flex-row sm:sticky sm:top-0">
+        <div>
+            <p class="text-4xl pb-10 sm:pb-0">Adivina</p>
+        </div>
+        <div class="flex justify-center items-center gap-10 sm:gap-20">
+            <a href="#nivel1"><button>Nivel1</button></a>
+            <a href="#nivel2"><button>Nivel2</button></a>
+            <a href="#nivel3"><button>Nivel3</button></a>
+        </div>
+        
+    </nav>
+    <main id="nivel1" class="bg-gray-900 text-slate-50 font-bold flex flex-col justify-center items-center gap-10 h-screen w-full">
+        <h2 class="text-5xl">Nivel 1</h2>
+        <p class="text-2xl" id="numero">Adivina del 0-20</p>
+        <input  type="number" id="adivinar" class="w-8/12 h-20 rounded-3xl text-black text-2xl px-5 text-center sm:w-9/12 sm:px-20" placeholder ="Escribe el Numero">
+        <button class="bg-orange-500 px-20 py-2 rounded-3xl text-black" onclick="adivinar()">Adivinar</button>
+    </main>
+    <section id="nivel2" class="bg-gray-800	 text-slate-50 font-bold flex flex-col justify-center items-center gap-10 h-screen w-full">
+        <h2 class="text-5xl">Nivel 2</h2>
+        <p class="text-2xl" id="numero2">Adivina del 0-50</p>
+        <input  type="number" id="adivinar2" class="w-8/12 h-20 rounded-3xl text-black text-2xl px-5 text-center sm:w-9/12 sm:px-20" placeholder ="Escribe el Numero">
+        <button class="bg-orange-500 px-20 py-2 rounded-3xl text-black" onclick="adivinar2()">Adivinar</button>
+    </section>
+    <section id="nivel3" class="bg-gray-700	 text-slate-50 font-bold flex flex-col justify-center items-center gap-10 h-screen w-full">
+        <h2 class="text-5xl">Nivel 3</h2>
+        <p class="text-2xl" id="numero3">Adivina del 0-100</p>
+        <input  type="number" id="adivinar3" class="w-8/12 h-20 rounded-3xl text-black text-2xl px-5 text-center sm:w-9/12 sm:px-20" placeholder ="Escribe el Numero">
+        <button class="bg-orange-500 px-20 py-2 rounded-3xl text-black" onclick="adivinar3()">Adivinar</button>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
